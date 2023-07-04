@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+#it is required for project implementation in tkinter platform (only when approached through My = N-Harshavarthan 's GiHhub)
 <project version="4">
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (HS_Steganography_project)" project-jdk-type="Python SDK" />
 </project>
