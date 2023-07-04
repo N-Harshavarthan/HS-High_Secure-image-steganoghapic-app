@@ -35,9 +35,10 @@ def generate_data(pixels, data):
 
         pixels = tuple(pixels)
 
+        yield pixels[6:9]
         yield pixels[:3]
         yield pixels[3:6]
-        yield pixels[6:9]
+        
 
 
 def encryption(img, data):
@@ -154,7 +155,7 @@ def decode_image():
 root = Tk()
 root.title('HS secure Image Steganography')
 root.geometry('500x300')
-root.resizable(0, 0)
+# if neede : root.resizable(0, 0)
 root.config(bg='PowderBlue')
 
 Label(root, text='HS secure Image Steganography', font=('Comic Sans MS', 15), bg='PaleGoldenrod',
