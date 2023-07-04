@@ -104,11 +104,11 @@ def encode_image():
     encode_wn.config(bg='PowderBlue')
     Label(encode_wn, text='Encode an Image', font=("HelvLight", 15), bg='PaleGoldenrod').place(x=220, rely=0)
 
-    Label(encode_wn, text='Enter the path of the image(with extension):', font=("Times New Roman", 13),
+    Label(encode_wn, text='Enter the path of the image(+ extension):', font=("Times New Roman", 13),
           bg='PaleTurquoise').place(x=10, y=50)
     Label(encode_wn, text='Enter the data to be encoded:', font=("Times New Roman", 13), bg='PaleTurquoise').place(
         x=10, y=90)
-    Label(encode_wn, text='Enter the output file name (without extension):', font=("Times New Roman", 13),
+    Label(encode_wn, text='Enter the output file name (no extension needed):', font=("Times New Roman", 13),
           bg='PaleTurquoise').place(x=10, y=130)
 
     img_path = Entry(encode_wn, width=35)
@@ -144,7 +144,7 @@ def decode_image():
     Button(decode_wn, text='Decode the Image', font=('Helvetica', 12), bg='PaleGoldenrod', command=lambda:
     main_decryption(img_entry.get(), text_strvar)).place(x=227, y=90)
 
-    Label(decode_wn, text='Text that has been encoded in the image:', font=("Times New Roman", 12), bg='NavajoWhite').place(
+    Label(decode_wn, text='Encoded Secret text in the image :', font=("Times New Roman", 12), bg='NavajoWhite').place(
         x=180, y=157)
 
     text_entry = Entry(decode_wn, width=94, text=text_strvar, state='disabled')
@@ -155,7 +155,7 @@ def decode_image():
 root = Tk()
 root.title('HS secure Image Steganography')
 root.geometry('500x300')
-# if neede : root.resizable(0, 0)
+# if needed : root.resizable(0, 0)
 root.config(bg='PowderBlue')
 
 Label(root, text='HS secure Image Steganography', font=('Comic Sans MS', 15), bg='PaleGoldenrod',
